@@ -87,37 +87,37 @@
 
   /* Header Sticky
     -------------------------------------------------------------------------*/
-  var headerSticky = function () {
-    let lastScrollTop = 0;
-    let delta = 5;
-    let navbarHeight = $("header").outerHeight();
-    let didScroll = false;
+  // var headerSticky = function () {
+  //   let lastScrollTop = 0;
+  //   let delta = 5;
+  //   let navbarHeight = $("header").outerHeight();
+  //   let didScroll = false;
 
-    $(window).scroll(function () {
-      didScroll = true;
-    });
+  //   $(window).scroll(function () {
+  //     didScroll = true;
+  //   });
 
-    setInterval(function () {
-      if (didScroll) {
-        let st = $(window).scrollTop();
-        navbarHeight = $("header").outerHeight();
+  //   setInterval(function () {
+  //     if (didScroll) {
+  //       let st = $(window).scrollTop();
+  //       navbarHeight = $("header").outerHeight();
 
-        if (st > navbarHeight) {
-          if (st > lastScrollTop + delta) {
-            $("header").css("top", `-${navbarHeight}px`);
-          } else if (st < lastScrollTop - delta) {
-            $("header").css("top", "0");
-            $("header").addClass("header-type-stc");
-          }
-        } else {
-          $("header").css("top", "unset");
-          $("header").removeClass("header-type-stc");
-        }
-        lastScrollTop = st;
-        didScroll = false;
-      }
-    }, 250);
-  };
+  //       if (st > navbarHeight) {
+  //         if (st > lastScrollTop + delta) {
+  //           $("header").css("top", `-${navbarHeight}px`);
+  //         } else if (st < lastScrollTop - delta) {
+  //           $("header").css("top", "0");
+  //           $("header").addClass("header-type-stc");
+  //         }
+  //       } else {
+  //         $("header").css("top", "unset");
+  //         $("header").removeClass("header-type-stc");
+  //       }
+  //       lastScrollTop = st;
+  //       didScroll = false;
+  //     }
+  //   }, 250);
+  // };
 
   /* Auto Popup Newsletter
     -------------------------------------------------------------------------*/
@@ -777,7 +777,7 @@
     sidebarMobile();
     changeValueDropdown();
     staggerWrap();
-    headerSticky();
+    // headerSticky();
     autoPopup();
     clickControl();
     totalPriceVariant();
@@ -801,3 +801,10 @@
     preloader();
   });
 })(jQuery);
+
+const categoriesBtn = document.querySelector(".categories-btn");
+const categoriesMenu = document.querySelector(".menu-category-list");
+
+categoriesBtn.addEventListener("click", () => {
+  categoriesMenu.classList.toggle("d-none");
+});
