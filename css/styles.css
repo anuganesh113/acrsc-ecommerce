@@ -11566,6 +11566,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 @media (max-width: 1199px) {
+  .breakcrumbs-section {
+    margin-top: 100px;
+  }
+  .ft-bottom {
+    padding-bottom: 100px;
+  }
   .tf-header .logo-site {
     max-width: 130px;
   }

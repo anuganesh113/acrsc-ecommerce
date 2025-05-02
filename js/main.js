@@ -802,9 +802,9 @@
   });
 })(jQuery);
 
-const categoriesBtn = document.querySelector(".categories-btn");
-const categoriesMenu = document.querySelector(".menu-category-list");
+// const categoriesBtn = document.querySelector(".categories-btn");
+// const categoriesMenu = document.querySelector(".menu-category-list");
 
-categoriesBtn.addEventListener("click", () => {
-  categoriesMenu.classList.toggle("d-none");
-});
+// categoriesBtn.addEventListener("click", () => {
+//   categoriesMenu.classList.toggle("d-none");
+// });
