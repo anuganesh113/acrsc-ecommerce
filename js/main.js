@@ -808,3 +808,15 @@
 // categoriesBtn.addEventListener("click", () => {
 //   categoriesMenu.classList.toggle("d-none");
 // });
+
+// Get the navbar element
+const navbar = document.querySelector(".inner-header"); // Change '.navbar' to your actual selector
+
+// Listen for scroll events on the window
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 0) {
+    navbar.classList.add("has-shadow");
+  } else {
+    navbar.classList.remove("has-shadow");
+  }
+});

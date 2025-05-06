@@ -48,7 +48,7 @@
   --gray-6: #f5f5f5;
   --primary: #1e9bd1;
   --primary-2: #d80027;
-  --secondary: #004ec3;
+  --secondary: #3aa54b;
   --secondary-2: #3da448;
   --third: #fcb500;
   --third-2: #ffe604;
@@ -5396,7 +5396,7 @@ input[type="number"]::-webkit-outer-spin-button {
   color: var(--white);
   max-width: 250px;
   width: max-content;
-  background-color: var(--black);
+  background-color: var(--secondary);
   transition: opacity 0.3s ease, visibility 0.3s ease,
     transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24),
     -webkit-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
@@ -5411,7 +5411,7 @@ input[type="number"]::-webkit-outer-spin-button {
   transform: translateX(-50%) rotate(45deg);
   top: 20px;
   position: absolute;
-  background: var(--black);
+  background: var(--secondary);
   width: 8px;
   height: 8px;
   z-index: -1;
@@ -5639,9 +5639,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .card-product .box-icon:hover {
-  background-color: var(--black) !important;
+  background-color: var(--secondary) !important;
   color: var(--white);
-  border-color: var(--black);
+  border-color: var(--secondary);
 }
 
 .card-product .card-product-info {
@@ -5746,6 +5746,7 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   gap: 20px;
   align-items: center;
+  justify-content: center;
 }
 
 .card-product.style-row.row-small {
