@@ -4375,6 +4375,12 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: auto;
 }
 
+.sw-pagination-banner {
+  margin-top: -54px !important;
+  z-index: 9;
+  position: relative;
+  padding-bottom: 20px;
+}
 .sw-dot-default {
   display: flex;
   gap: 10px;
@@ -9041,13 +9047,21 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.banner-section {
+  /* height: 565px; */
+}
 .banner-image-product {
   padding: 60px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+.banner-main-text {
+  max-width: 700px;
+  margin-bottom: 20px;
+  font-size: 56px;
+  line-height: 1.2;
 }
 
 .banner-image-product .img-2 {
@@ -9975,6 +9989,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   height: 100%;
   border-radius: 8px;
   gap: 10px 0px;
+  height: 78vh;
 }
 
 .banner-image-product-4 .img-item {
@@ -11668,6 +11683,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   .btn-direc p {
     display: none;
   }
+  .banner-main-text {
+    font-size: 42px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -11765,6 +11783,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 @media (max-width: 767px) {
+  .banner-main-text {
+    font-size: 32px;
+  }
   .tf-header .logo-site img {
     width: 60px;
   }
